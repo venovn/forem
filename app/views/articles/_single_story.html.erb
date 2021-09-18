@@ -65,7 +65,7 @@
                     <button
                       class="crayons-btn follow-action-button whitespace-nowrap follow-user w-100"
                       data-info='{"id": <%= story.user_id %>, "className": "User", "style": "full", "name": "<%= story.cached_user.name %>"}'>
-                      Follow
+                      Theo dõi
                     </button>
                   </div>
                   <div
@@ -132,13 +132,13 @@
           <% else %>
             <a href="<%= story.path %>#comments" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left">
               <%= inline_svg_tag("small-comment.svg", aria: true, width: 24, height: 24, class: "crayons-icon", title: "Comments") %>
-              <span class="hidden s:inline">Add&nbsp;Comment</span>
+              <span class="hidden s:inline">Viết&nbsp;Comment</span>
             </a>
           <% end %>
         </div>
         <div class="crayons-story__save">
           <small class="crayons-story__tertiary fs-xs mr-2">
-            <%= story.reading_time < 1 ? 1 : story.reading_time %> min read
+            <%= story.reading_time < 1 ? 1 : story.reading_time %> Phút đọc
           </small>
           <button type="button" id="article-save-button-<%= story.id %>" class="crayons-btn crayons-btn--secondary crayons-btn--s bookmark-button" data-reactable-id="<%= story.id %>" aria-label="Save to reading list" title="Save to reading list">
             <span class="bm-initial">Save</span>
