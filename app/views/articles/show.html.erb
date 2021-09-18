@@ -166,7 +166,7 @@
                   ・<em>Updated on <%= local_date(@article.edited_at, show_year: @article.edited_at.year != Time.current.year) %></em>
                 <% end %>
 
-                <span class="mr-4">・<%= @article.reading_time < 1 ? 1 : @article.reading_time %> min read</span>
+                <span class="mr-4">・<%= @article.reading_time < 1 ? 1 : @article.reading_time %> phút đọc</span>
               </span>
               <span id="action-space" class="mb-4 s:mb-0"></span>
             </div>
