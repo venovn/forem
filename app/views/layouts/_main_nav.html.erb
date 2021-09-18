@@ -9,14 +9,7 @@
         Trang Chủ
       </a>
     </li>
-    <li>
-      <% unless user_signed_in? %>
-        <a href="<%= sign_up_path %>" class="crayons-link crayons-link--block fw-bold">
-          <%= inline_svg_tag("twemoji/handshake.svg", class: "crayons-icon crayons-icon--default", aria_hidden: true) %>
-         Đăng Nhập/Đăng Ký
-        </a>
-      <% end %>
-    </li>
+    
     <% default_nav_links.each do |link| %>
       <%= render "layouts/sidebar_nav_link", link: link %>
     <% end %>
