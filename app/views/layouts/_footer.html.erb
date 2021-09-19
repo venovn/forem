@@ -3,9 +3,17 @@
     <p class="fs-s crayons-footer__description"><a href="/" aria-label="<%= community_name %> Home" class="crayons-link"><%= community_name %></a> – <%= Settings::Community.community_description %></p>
     <div class="m:-mb-4 crayons-footer__description">
       <%# The following copy is necessary for compatibility with the Forem AGPL licence which requires instances to link back to the source. %>
-      <p class="fs-s">Built on <a href="#" class="crayons-link" rel="noopener">Forem</a> — the <a href="#" rel="noopener" class="crayons-link">open source</a> software that powers <a href="#" rel="noopener" class="crayons-link">DEV</a> and other inclusive communities.</p>
+      
       <p class="fs-s">Made with love and <a href="#" rel="noopener" class="crayons-link">Ruby on Rails</a>. <%= community_name %> <span title="copyright">&copy;</span> <%= copyright_notice %>.</p>
-      <div><a href="#" rel="noopener" class="inline-block mt-4"><%= inline_svg_tag("logo-forem.svg", aria: true, class: "crayons-icon crayons-icon--default", title: "Forem logo") %></a></div>
+      <div><a href="/" class="site-logo" aria-label="Diễn đàn tiền điện tử Việt Nam Home">
+    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M823.758 315.169H696.089L653.533 251.334L696.089 187.5L823.758 315.169Z" fill="#E93CE9"></path>
+<path d="M483.308 667.108L561.399 661.363L554.376 740.732L483.308 825.844V667.108Z" fill="black"></path>
+<path d="M696.089 187.5V570.507L582.875 499.849L483.308 357.725L696.089 187.5Z" fill="black"></path>
+<path d="M483.307 357.725L525.864 491.138L483.307 667.108L142.857 315.169H440.751L483.307 357.725Z" fill="#E93CE9"></path>
+<path d="M696.089 570.506L554.376 740.732L483.308 667.108V357.725L696.089 570.506Z" fill="#3D2077"></path>
+</svg>
+</a></div>
     </div>
   </div>
 </footer>
