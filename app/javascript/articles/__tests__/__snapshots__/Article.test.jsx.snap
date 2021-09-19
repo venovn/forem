@@ -233,7 +233,7 @@ Object {
                   <small
                     class="crayons-story__tertiary mr-2"
                   >
-                    1 min read
+                    1 phút đọc
                   </small>
                   <button
                     class="crayons-btn crayons-btn--s crayons-btn--secondary"
@@ -481,7 +481,7 @@ Object {
                 <small
                   class="crayons-story__tertiary mr-2"
                 >
-                  1 min read
+                  1 phút đọc
                 </small>
                 <button
                   class="crayons-btn crayons-btn--s crayons-btn--secondary"
