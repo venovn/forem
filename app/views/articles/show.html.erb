@@ -111,6 +111,8 @@
                 <%= @organization.name %>
               </a>
             <% end %>
+			
+			ads
             <h1 class="fs-3xl m:fs-4xl l:fs-3xl fw-bold s:fw-heavy lh-tight mb-4 <%= @article.title_length_classification %>">
               <% if @article.search_optimized_title_preamble.present? && !user_signed_in? %>
                 <span class="fs-xl color-base-70 block"><%= @article.search_optimized_title_preamble %></span>
