@@ -32,7 +32,9 @@
       data-feed="<%= params[:timeframe] || "base-feed" %>"
       data-articles-since="<%= Timeframe.datetime_iso8601(params[:timeframe]) %>">
 
-    
+     <aside class="crayons-layout__sidebar-left" aria-label="Article actions">
+    <%= render "articles/actions" %>
+  </aside>
 
     <%# BEGIN Feed menu bar %>
     <main class="articles-list crayons-layout__content" id="main-content" data-follow-button-container="true">
