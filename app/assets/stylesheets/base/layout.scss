@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    --layout-sidebar-left-width: 240px;
+    --layout-sidebar-left-width: 0px;
     --layout-content-width: 1fr;
     --layout-gap: var(--su-4);
   }
