@@ -1,5 +1,7 @@
 <% campaign = CampaignDecorator.new(Campaign.current) %>
+<section class="crayons-card crayons-card--secondary">
 <%= render "layouts/main_nav" %>
+</section>
 <section class="crayons-card crayons-card--secondary">
   <%= campaign.sidebar_image(class: "block w-100 h-auto radius-default", width: 1000, height: 420) %>
   <header class="crayons-card__header">
