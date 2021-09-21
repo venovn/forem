@@ -39,7 +39,7 @@
   &__sidebar-left {
     display: var(--layout-sidebar-left-display);
     grid-row-end: var(--layout-sidebar-left-row-end);
-    width: var(--layout-sidebar-left-width);
+    width: 0px;
   }
 
   &__sidebar-right {
@@ -139,7 +139,7 @@
   @media (min-width: $breakpoint-m) {
     --layout: var(--layout-sidebar-left-width) var(--layout-content-width);
     --layout-sidebar-left-row-end: span 2;
-    --layout-sidebar-left-width: 2fr;
+    --layout-sidebar-left-width: 0px;
     --layout-sidebar-right-width: 5fr;
     --layout-content-width: 5fr;
   }
