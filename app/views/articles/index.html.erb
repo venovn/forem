@@ -35,7 +35,7 @@
       <%= render(partial: "onboardings/task_card") if user_signed_in? %>
 
       <header class="p-2 px-3 m:p-0 m:px-0 m:mb-2 fs-l">
-	  ads
+	  
         <h1 class="screen-reader-only">Posts</h1>
         <nav class="-mx-3 m:mx-0 s:flex items-center justify-between" aria-label="View posts by">
           <ul class="crayons-navigation crayons-navigation--horizontal">
@@ -86,6 +86,7 @@
     </main>
 
     <%= render "articles/sidebar_additional" %>
+	
   </div>
 
   <%= javascript_packs_with_chunks_tag "storiesList", "followButtons", "feedPreviewCards", defer: true %>
