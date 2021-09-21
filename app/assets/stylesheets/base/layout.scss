@@ -3,7 +3,7 @@
 :root {
   --layout-sidebar-left-display: block;
   --layout-sidebar-right-display: block;
-  --layout-sidebar-left-width: 100%;
+  --layout-sidebar-left-width: 0%;
   --layout-sidebar-right-width: 100%;
   --layout-sidebar-left-row-end: initial;
   --layout-content-width: 100%;
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    --layout-sidebar-left-width: 0px;
+    --layout-sidebar-left-width: 240px;
     --layout-content-width: 1fr;
     --layout-gap: var(--su-4);
     --layout-padding: var(--su-4);
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    --layout-sidebar-left-width: 0px;
+    --layout-sidebar-left-width: 240px;
     --layout-content-width: 1fr;
     --layout-gap: var(--su-4);
   }
@@ -145,7 +145,7 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    --layout-sidebar-left-width: 0px;
+    --layout-sidebar-left-width: 240px;
     --layout-sidebar-right-width: 1fr;
     --layout-sidebar-left-row-end: initial;
     --layout-content-width: 2fr;
@@ -168,7 +168,7 @@
     @media (min-width: $breakpoint-l) {
       --layout-sidebar-right-display: block;
       --layout-sidebar-right-width: 1fr;
-      --layout-sidebar-left-width: 0px;
+      --layout-sidebar-left-width: 240px;
     }
   }
 }
