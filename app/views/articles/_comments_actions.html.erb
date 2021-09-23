@@ -2,14 +2,14 @@
   <% if @comments_to_show_count && @article.comments_count > @comments_to_show_count %>
     <div class="mb-4">
       <a class="crayons-btn crayons-btn--secondary w-100" href="<%= @article.path %>/comments">
-        View full discussion (<%= @article.comments_count %> comments)
+        Xem toàn bộ bài viết (<%= @article.comments_count %> comments)
       </a>
     </div>
   <% end %>
 
   <% if @article.any_comments_hidden %>
     <p class="fs-s color-base-60 mb-4">
-      Some comments have been hidden by the post's author - <a href="/faq">find out more</a>
+      Một số bình luận đã được tác giả của bài đăng ẩn đi - <a href="/faq">Xem thêm</a>
     </p>
   <% end %>
 
