@@ -1,6 +1,6 @@
 module Articles
   class Suggest
-    MAX_DEFAULT = 4
+    MAX_DEFAULT = 10
 
     def self.call(article, max: MAX_DEFAULT)
       new(article, max: max).call
@@ -57,7 +57,7 @@ module Articles
     end
 
     def offset
-      total_articles_count > 1000 ? 200 : (total_articles_count / 10)
+      total_articles_count > 1000 ? 200 : (total_articles_count / 1)
     end
 
     def tag_suggestion_query
