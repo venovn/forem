@@ -28,26 +28,20 @@ function handleDeepLinkFallback() {
   const targetPath = urlParams.get('deep_link');
 
   // Constants - they will become dynamic (configurable by creators) in upcoming releases
-  const FOREM_IOS_SCHEME = 'com.forem.app';
-  const FOREM_APP_STORE_URL =
-    'https://apps.apple.com/us/app/forem/id1536933197';
-  const FOREM_GOOGLE_PLAY_URL =
-    'https://play.google.com/store/apps/details?id=to.dev.dev_android';
-
   if (Runtime.currentOS() === 'iOS') {
     // The install now must target Apple's AppStore
     installNowButton.href = FOREM_APP_STORE_URL;
 
     // We try to deep link directly by launching a custom scheme and populate
     // the retry button in case the user will need it
-    const targetLink = `${FOREM_IOS_SCHEME}://${window.location.host}${targetPath}`;
-    retryButton.href = targetLink;
-    window.location.href = targetLink;
-  } else if (Runtime.currentOS() === 'Android') {
-    const targetIntent =
-      'intent://scan/#Intent;scheme=com.forem.app;package=com.forem.app;end';
-    retryButton.href = targetIntent;
-    installNowButton.href = FOREM_GOOGLE_PLAY_URL;
+    //const targetLink = `${FOREM_IOS_SCHEME}://${window.location.host}${targetPath}`;
+    //retryButton.href = targetLink;
+    //window.location.href = targetLink;
+  //} else if (Runtime.currentOS() === 'Android') {
+   // const targetIntent =
+    //  'intent://scan/#Intent;scheme=com.forem.app;package=com.forem.app;end';
+   // retryButton.href = targetIntent;
+//installNowButton.href = FOREM_GOOGLE_PLAY_URL;
 
     // Android support isn't available yet. Android users visiting `/r/mobile`
     // will be redirected to the home page so they don't land on a unsupported
